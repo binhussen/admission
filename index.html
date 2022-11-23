@@ -1,0 +1,63 @@
+<!-- @format -->
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				background-color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p id="title">Survey Form</p>
+		<p id="description">This is our survey</p>
+		<br action="" id="survey-form">
+			<p id="name-label">Name</p>
+			<input
+				type="text"
+				name="name"
+				id="name"
+				placeholder="Enter Your Name"
+				required
+			/>
+			<p id="email-label">Email</p>
+			<input
+				type="text"
+				name="email"
+				id="email"
+				placeholder="Enter your Email"
+				required
+			/>
+			<p id="number-label">Number</p>
+			<input
+				type="text"
+				name="number"
+				id="number"
+				min="2"
+				max="15"
+				placeholder="Enter Your Number"
+			/>
+<br>
+			<select name="Department" id="dropdown">
+				<option value="cs">Computer Science</option>
+				<option value="sw">Software Engineer</option>
+			</select>
+      <br>
+			<input type="radio" name="gender" id="male" value="Male" />
+			<input type="radio" name="gender" id="female" value="Female" />
+			<input type="checkbox" name="Courses" id="java" value="Java" />
+			<input type="checkbox" name="Courses" id="js" value="Javascript" />
+			<textarea
+				name="Description"
+				id="describtion"
+				cols="30"
+				rows="10"
+			></textarea>
+			<input type="text" value="Submit" id="submit" />
+		</form>
+	</body>
+</html>
